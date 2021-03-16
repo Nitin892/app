@@ -1,0 +1,32 @@
+MDFloatLayout:
+    MDLabel:
+        text:"TEXT TO SPEECH"
+        pos_hint:{"center_y":.7}
+        halign:"center"
+        bold:True
+        font_style:"H4"
+
+
+
+    MDTextField:
+        id:text
+        hint_text:"Text To Speech"
+        size_hint_x:.8
+        pos_hint:{"center_x":.5,"center_y":.5}
+        helper_text:"Enter Your Text"
+        helper_text_mode:"on_focus"
+
+    MDRaisedButton:
+        text:"Save"
+        pos_hint:{"center_x":.3,"center_y":.35}
+        on_release:app.speak()
+
+
+    MDRaisedButton:
+        text:"Try"
+        pos_hint:{"center_x":.7,"center_y":.35}
+        on_release:app.demo()
+
+
+
+
