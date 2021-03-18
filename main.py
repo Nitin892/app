@@ -1,5 +1,4 @@
-from kivy.config import Config
-Config.set('kivy', 'keyboard_mode', 'systemanddock')
+
 from kivymd.app import MDApp
 from kivy.uix.textinput import TextInput
 from kivymd.uix.button import MDFlatButton
@@ -8,7 +7,7 @@ from kivymd.uix.label import MDLabel #importing for text
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import Screen, ScreenManager   #import screen for managing screen
 import pyttsx3
-engine=pyttsx3.init("sapi5")
+engine=pyttsx3.init()
 
 
 class DemoApp(MDApp):
