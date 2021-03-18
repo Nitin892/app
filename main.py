@@ -27,7 +27,5 @@ class DemoApp(MDApp):
     def demo(self):
         self.engine.say(self.root.ids.text.text)
         self.engine.runAndWait()
-
-# if __name__ == '__main__':
-
-DemoApp().run()
+if __name__ == '__main__':
+    DemoApp().run()
