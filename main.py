@@ -11,7 +11,7 @@ engine=pyttsx3.init()
 
 
 class DemoApp(MDApp):
-    engine=pyttsx3.init("sapi5")
+    engine=pyttsx3.init()
 
     def build(self):
 
